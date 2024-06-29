@@ -26,8 +26,11 @@ export default function RootLayout({ children }) {
           <Toaster />
           <Footer />
         </CartProvider>
-        <div className="h-[2000px]"></div>
+        {/* <div className="h-[2000px]"></div> */}
       </body>
     </html>
   );
 }
+
+export const dynamic = "force-dynamic";
+export const revalidate = 10;
